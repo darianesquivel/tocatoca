@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.png";
+import "./App.css";
+import Button from "@mui/material/Button";
+import { ButtonGroup } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <ButtonGroup
+          orientation="contained"
+          aria-label="vertical outlined button group"
         >
-          Learn React
-        </a>
+          <Button variant="contained" color="error">
+            Sorteo Instagram
+          </Button>
+          <Button variant="contained" color="success">
+            Sorteo Equipos
+          </Button>
+          <Button variant="contained" color="secondary">
+            Sorteo General
+          </Button>
+        </ButtonGroup>
       </header>
     </div>
   );
